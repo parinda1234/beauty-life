@@ -1,0 +1,27 @@
+{
+  "name": "fullstac-project",
+  "version": "1.0.0",
+  "description": "beauty-life",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "salon",
+    "beauty",
+    "angular"
+  ],
+  "author": "parinda-siriwardhana",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.3.7",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "mocha": "^10.2.0",
+    "mongoose": "^6.8.3",
+    "save-dev": "^0.0.1-security",
+    "socket.io": "^4.5.4",
+    "supertest": "^6.3.3"
+  }
+}
