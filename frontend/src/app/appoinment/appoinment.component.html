@@ -1,0 +1,113 @@
+<style>
+
+
+h1 {text-align: center;} 
+h2 {text-align: center;} 
+
+.form-group{
+  width: 600px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
+
+
+</style>
+
+
+
+
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"> BEAUTY LIFE</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav"> 
+    
+          
+          <img
+          width="40"
+          alt="Angular Logo"
+          src="assets/images/2e37cd289b65b3f7732d3fb8a2205d51.jpg"
+        />
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" routerLink="/home">Home</a>
+            </li>
+            
+            
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/services">services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " routerLink="/contact">contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " routerLink="/prices">prices</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " routerLink="/appoinment">appoinment</a>
+            </li>
+          </ul>
+        </div>
+        <a href="login" style="text-decoration: none; color: white;">LOGOUT</a>
+      </div>
+    </nav>
+    
+    <h1 style="background-color:rgb(201, 88, 142);color:rgb(10, 8, 8);font-size:80px;">MAKE YOUR APPOINMENT</h1>
+      <h2 > Enhance Your Beauty And Uniqueness </h2>
+      
+    <div class="gfg">
+      <img
+      width="1500"
+      
+      alt="Angular Logo"
+      src="assets/images/header-background.jpg"
+    />
+
+
+
+
+
+
+
+<h3 style="color: black; text-align:center;">Make an Appoinment</h3><br><br>
+<div class="container mt-4">
+  
+<form class="f">
+    <div class="form-group">
+      <h5>Name of the appointment setter</h5>
+      <input type="text" [(ngModel)]="username" [ngModelOptions]="{standalone: true}" class="form-control" id="username" placeholder="Sandy">
+    </div>
+
+    <div class="form-group">
+      <h5>Mobile Number</h5>
+      <input type="text" [(ngModel)]="pnum" [ngModelOptions]="{standalone: true}" class="form-control" id="pnum" placeholder="07*-*******">
+    </div>
+
+    <div class="form-group">
+      <h5>Service Required From Us</h5>
+      <input type="text" [(ngModel)]="srvce" [ngModelOptions]="{standalone: true}" class="form-control" id="srvce" placeholder="Service Type" style="width: 600px;">
+    </div>
+
+    <div class="form-group">
+      <h5> Set Appointment Date</h5>
+      <input type="text" [(ngModel)]="Addate" [ngModelOptions]="{standalone: true}" class="form-control" id="Addate" placeholder="DD.MM.YYYY">
+    </div>
+
+    <div class="form-group">
+      <h5> Persons </h5>
+        <input type="text" [(ngModel)]="prsn" [ngModelOptions]="{standalone: true}" class="form-control" id=“prsn” placeholder="No of Persons">
+      </div><br>
+
+      <div class="form-group">
+        <button type="submit" (click)="addfunc()" class="btn btn-primary" style="width: 600px;">Set Appointment</button>
+      </div>
+</form>
+</div>
+
+  

@@ -1,0 +1,155 @@
+<div class="toolbar" role="banner">
+  
+  <style>
+  
+     h1 {text-align: center;} 
+          p{text-align: top left ;
+           
+       }
+      
+      
+      h2{text-align: center;}
+      
+    box-sizing border-box
+  
+  /* Full-width input fields */
+    input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+  }
+  
+  input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+  }
+  
+  /* Set a style for all buttons */
+  button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+  }
+  
+  button:hover {
+    opacity:1;
+  }
+  
+  /* Extra styles for the cancel button */
+  .cancelbtn {
+    padding: 14px 20px;
+    background-color: #f44336;
+  }
+  
+  /* Float cancel and signup buttons and add an equal width */
+  .cancelbtn, .signupbtn {
+    float: left;
+    width: 50%;
+  }
+  
+  /* Add padding to container elements */
+  .container {
+    padding: 16px;
+  }
+  
+  /* Clear floats */
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  /* Change styles for cancel button and signup button on extra small screens */
+  @media screen and (max-width: 300px) {
+    .cancelbtn, .signupbtn {
+      width: 100%;
+    }
+  }
+</style>
+
+<body>
+  <h1 style="background-color:rgb(201, 88, 142);color:rgb(10, 8, 8);font-size:80px;">WELCOME TO PROFILE.</h1>
+    <h2> Enhance Your Beauty And Uniqueness </h2>
+  <img
+    width="1550"
+    alt="Angular Logo"
+    src="assets/images/172123110_443680423561136_255857937701375834_n.jpeg" />
+  </body>
+  
+  <div class="container mt-4" >
+    <div class="card">
+            <h1> Register Here.</h1>
+  <form>
+    <div class="form-group">
+      <label>Name</label>
+      <input type="text" [(ngModel)]="name" [ngModelOptions]="{standalone: true}"  class="form-control" id="name" placeholder="Enter Name"> 
+    </div>
+  
+    <div class="form-group">
+        <label>Address</label>
+        <input type="text" class="form-control"  [(ngModel)]="address" [ngModelOptions]="{standalone: true}" id="address" placeholder="Enter Address"> 
+      </div>
+  
+      <div class="form-group">
+        <label>Phone</label>
+        <input type="text" class="form-control" [(ngModel)]="phone" [ngModelOptions]="{standalone: true}" id="phone" placeholder="Enter Phone"> 
+      </div>
+
+      <div class="form-group">
+        <label>Username</label>
+        <input type="text" class="form-control" [(ngModel)]="username" [ngModelOptions]="{standalone: true}" id="username" placeholder="Enter Username"> 
+      </div>
+
+      <div class="form-group">
+        <label>Password</label>
+        <input type="text" class="form-control" [(ngModel)]="password" [ngModelOptions]="{standalone: true}" id="password" placeholder="Enter Password"> 
+      </div>
+
+
+    <button type="submit" (click)="save()" class="btn btn-primary">Submit</button>
+  </form>
+  </div>
+  </div>
+  
+
+
+
+
+<!-- <div class="container mt-4" >
+ <h1>Student Table</h1>
+<table class="table">
+  <thead>    
+  <tr>
+      <th scope="col">Name</th>
+      <th scope="col">Address</th>
+      <th scope="col">Phone</th>  
+      <th scope="col">Option</th>
+    </tr>
+  </thead>
+  <tbody>
+      <tr *ngFor="let StudentItem of StudentArray">
+      <td>{{StudentItem.name  | uppercase}}</td>
+      <td>{{StudentItem.address }}</td>
+      <td>{{StudentItem.phone }}</td>
+      <td>
+        <button type="button" class="btn btn-success" (click)="setUpdate(StudentItem)">Edit</button>
+        <button type="button" class="btn btn-danger" (click)="setDelete(StudentItem)">Delete</button>            
+      </td>
+    </tr>          
+  </tbody>
+</table>
+
+</div> -->
